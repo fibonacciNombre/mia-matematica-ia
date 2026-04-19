@@ -1,0 +1,207 @@
+
+---
+
+Resumen:
+
+### Estructura del Curso
+
+- El curso se desarrollará en 16 semanas con 3 horas semanales totales: jueves (1.5 horas) y sábados (2 horas)
+- Se cubrirán temas de programación matemática, fundamentos de ML, y aplicaciones prácticas
+- La clase del jueves fue suspendida por problemas de plataforma, requiriendo una sesión de recuperación
+
+### Modalidad de Evaluación
+
+- Formación de grupos de 4-5 estudiantes, preferiblemente los mismos que en el curso de Fundamentos
+- Evaluaciones grupales: parcial y final con pesos específicos
+- Quizzes individuales a partir de la cuarta sesión (ejercicios de 2-3 pasos)
+- Informe de trabajo de investigación (peso 2 en la nota final)
+- Nota final calculada como: (promedio quizzes + trabajo investigación)/2 con peso 2 + exámenes
+
+### Bibliografía Recomendada
+
+- Texto principal: libro de matemáticas para Machine Learning (disponible en PDF buscando autor + "pdf")
+- Texto complementario sobre aplicaciones en ingeniería (año anterior pero relevante)
+
+### Logística y Comunicación
+
+- Acceso a plataforma institucional estará disponible la próxima semana
+- Profesor compartió número de teléfono y correo institucional para comunicación
+- Franco fue propuesto como delegado del curso
+
+### Formación de Grupos
+
+- [ ]  Estudiantes deben crear Excel compartido con: nombres, apellidos, correo, teléfono, habilidades, carrera, actividad profesional
+- Recomendación del profesor: formar grupos **transversales** con miembros de diferentes profesiones/carreras para enriquecer perspectivas
+- Algunos estudiantes ya formaron grupos en el curso de Fundamentos
+- La decisión final de composición de grupos queda a criterio de los estudiantes
+
+### Trabajo de Investigación
+
+- [ ]  Cada grupo debe seleccionar 3 artículos científicos Q1 o Q2 (Scopus/Web of Science) sobre aplicaciones de IA que utilicen herramientas matemáticas de forma explícita
+- [ ]  Enviar propuesta de artículos **antes del 28 de abril** al correo del profesor con justificación de la elección
+- Los artículos deben tener máximo 15 años de antigüedad (excepción: artículos fundamentales con muchas citaciones)
+- Artículos deben mostrar explícitamente qué herramientas matemáticas se utilizaron, no solo mencionarlas
+- El líder del grupo enviará con copia a todos los miembros
+- Profesor responderá en 1 día indicando cuál artículo será la referencia para el informe
+- Artículos de repositorios como arXiv son aceptables si han sido valorados adecuadamente
+
+### Opción Alternativa: Artículo de Revisión
+
+- Alternativa al informe: preparar artículo de revisión de literatura para revista indexada
+- Requiere avance mínimo del 80% del manuscrito bajo supervisión del profesor
+- Ventaja: publicación para currículum profesional
+- Cronograma más flexible que el informe estándar
+- Requiere mayor compromiso de tiempo y seguimiento de proceso establecido
+
+### Recuperación de Clase
+
+- Opciones discutidas: domingo 20 de abril (11-14h), sábado 25 de abril (8-11h o 9-12h), o domingo 26 de abril (10:30-13:30h o 11-14h)
+- Opción de recuperación para domingo fue descartada inicialmente
+- Solo 14 de ~30 estudiantes completaron Excel de disponibilidad
+- Decisión final: posponer recuperación, definir con delegado para próximo fin de semana
+- Profesor estará de viaje próximo fin de semana con reunión importante entre 12-14h
+
+### Contenido Matemático: Conjuntos y Relaciones
+
+**Conceptos Fundamentales de Conjuntos**
+
+- Conjunto: colección de objetos/elementos que se pueden enumerar directamente o caracterizar por una propiedad
+- Igualdad de conjuntos requiere verificar doble inclusión (cada elemento de uno pertenece al otro y viceversa)
+- Conjunto vacío: no tiene elementos, es subconjunto de cualquier conjunto
+- Cardinalidad: número de elementos de un conjunto (finito o infinito)
+- Importante: cardinalidad infinita de números pares ≠ cardinalidad infinita de números reales
+
+**Comparación y Operaciones entre Conjuntos**
+
+- Pertenencia (∈): relación entre elemento y conjunto
+- Inclusión (⊆): relación entre conjuntos (subconjunto)
+- Error común: no confundir pertenencia con inclusión
+- Operaciones binarias: unión, intersección, diferencia
+- Complemento: elementos que no pertenecen al subconjunto respecto al conjunto de referencia
+
+**Aplicación en Machine Learning**
+
+- Conjunto de referencia = base de datos o data completa
+- Subconjunto para entrenamiento del modelo/función con calibración de parámetros
+- Complemento = data para verificar si modelo entrenado genera buenas previsiones
+
+**Propiedades de Operaciones**
+
+- Propiedad conmutativa: orden no afecta resultado (unión e intersección)
+- Propiedad asociativa: permite operar múltiples conjuntos sin importar agrupación
+- Propiedad distributiva: intersección sobre unión y viceversa
+- Ley de De Morgan: complemento se distribuye cambiando operación (intersección ↔ unión)
+- Principio de inclusión-exclusión para cardinalidad
+
+**Producto Cartesiano**
+
+- Conjunto de parejas ordenadas donde primera entrada es del primer conjunto, segunda del segundo conjunto
+- Orden importa según contexto (geometría, matrices)
+- Cardinalidad del producto cartesiano = producto de cardinalidades
+- Generalización a n-tuplas para productos de múltiples conjuntos
+- Fundamental en ML: bases de datos, espacios vectoriales, concepto de dimensión
+
+**Conjuntos Numéricos**
+
+- Naturales (ℕ): números de conteo, base para otros conjuntos
+- Enteros (ℤ): incluyen negativos (opuestos aditivos) necesarios para operación de adición
+- Racionales (ℚ): cocientes de enteros, representación decimal exacta, periódica o periódica mixta
+- Irracionales: decimales que no son exactos ni periódicos (√2, π, e)
+- Reales (ℝ): unión de racionales e irracionales, usado en casi todos los modelos de IA
+- Complejos (ℂ): extensión de reales con unidad imaginaria (i² = -1), usados en acústica, señales, circuitos eléctricos y algunos modelos recientes de IA
+- Reales están estrictamente contenidos en complejos
+- Conjugado de número complejo: cambio de signo en parte imaginaria
+
+### Relaciones entre Conjuntos
+
+**Definición y Representación**
+
+- Relación: subconjunto del producto cartesiano entre dos conjuntos
+- Notación: xRy indica que (x,y) pertenece a la relación R
+- Representación geométrica posible en sistema cartesiano para conjuntos numéricos
+
+**Interpolación y Modelado**
+
+- Búsqueda de función/curva que pase por puntos de la relación
+- Más importante que interpolación exacta: observar comportamiento y distribución de datos
+- En ML: nube de puntos (scatter) requiere enfoque estadístico-probabilístico para mejor modelo
+
+**Propiedades de Relaciones**
+
+- Reflexiva: cada elemento relacionado consigo mismo (ejemplo: igualdad)
+- Antireflexiva: ningún elemento relacionado consigo mismo (ejemplo: menor estricto)
+- Simétrica: si xRy entonces yRx (ambas parejas ordenadas presentes)
+- Antisimétrica: para elementos diferentes, si xRy entonces no yRx
+- Transitiva: si xRy y yRz entonces xRz (elemento intermedio como nexo)
+
+**Tipos Especiales de Relaciones**
+
+- Relación de equivalencia: reflexiva + simétrica + transitiva (ejemplo: igualdad, congruencia geométrica)
+- Relación de orden: reflexiva + antisimétrica + transitiva (ejemplo: ≤, inclusión ⊆)
+- Relación de orden estricto: antireflexiva + antisimétrica + transitiva (ejemplo: <, inclusión estricta)
+
+**Aplicaciones**
+
+- Congruencia geométrica relevante en etiquetado de imágenes satelitales, fotogrametría, radiografías, tomografías
+- Relación de equivalencia genera partición del conjunto (subconjuntos disjuntos cuya unión es el total)
+- Clusterización en ML: agrupación de data según relación de equivalencia
+- Correspondencia biunívoca: relación de equivalencia ↔ partición del conjunto
+
+### Funciones
+
+**Definición**
+
+- Función: relación especial donde cada elemento del dominio se relaciona con **exactamente uno** del codominio
+- Terna que define función: dominio (conjunto 1), codominio (conjunto 2), gráfico (subconjunto del producto cartesiano)
+- Importante: misma regla de cálculo con diferente dominio o codominio = funciones diferentes
+
+**Conceptos Asociados**
+
+- Imagen de función y pre-imagen de elemento/subconjunto
+- Precaución: pre-imagen ≠ recíproco (opuesto multiplicativo)
+
+**Composición de Funciones**
+
+- Operación fundamental en modelos de IA
+- Modelo global = secuencia de subprocesos/submodelos, cada uno representado por una función
+- Composición: resultado final = f_n ∘ f_{n-1} ∘ ... ∘ f_1 aplicado a data de entrada
+- Mejorar modelo global requiere entender y modificar submodelos componentes
+- Propiedad asociativa de composición permite flexibilidad operativa
+
+**Tipos de Funciones**
+
+- Inyectiva, sobreyectiva, biyectiva
+- Función biyectiva permite definir función inversa respecto a composición
+- Función inversa cumple: f ∘ f^{-1} = id_Y y f^{-1} ∘ f = id_X
+- Función identidad: devuelve mismo elemento de entrada sin modificación
+
+### Operaciones Binarias
+
+**Definición**
+
+- Operación binaria interna: función de dos argumentos cuyo resultado pertenece al mismo conjunto
+- Dominio = producto cartesiano del conjunto consigo mismo, codominio = mismo conjunto
+- Ejemplos: intersección de conjuntos, unión de conjuntos, adición de números
+- Caso específico: adición de números reales toma pareja de reales y asocia otro real (suma)
+
+### Contexto del Curso en IA
+
+**Importancia de las Matemáticas en IA**
+
+- Padre de IA (premio Nobel): "En IA hay demasiada ingeniería pero muy poca matemática"
+- Muchos modelos son modificaciones/híbridos sin innovación acelerada
+- Tendencia reciente: participación de físicos, estadísticos y matemáticos mejorando modelos
+- Estudiantes pueden ser usuarios, modificadores o generadores de modelos
+
+**Diversidad de Estudiantes**
+
+- Tercer año de maestría con estudiantes de diversas carreras: ingeniería, economía, contabilidad, medicina, biología, Fuerzas Armadas, Policía
+- IA trasciende la ingeniería
+- Muchos estudiantes no son de ingeniería de sistemas/informática, requieren fundamentos claros
+
+### Problemas Técnicos Reportados
+
+- Estudiantes no pueden acceder a grabaciones de Teams por falta de registro en sistema universitario
+- Error reportado al intentar ver grabaciones automáticas
+- Problema atribuido a proveedores según información recibida
+- Situación escapa a posibilidades del profesor para dar solución directa
